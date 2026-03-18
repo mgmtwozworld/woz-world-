@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justin Wozniak</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2f3b2f;
+
+  /* Beach image + gradient overlay */
+  background:
+    linear-gradient(rgba(30,40,30,0.4), rgba(30,40,30,0.4)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* subtle palm overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('https://www.transparenttextures.com/patterns/palm-leaf.png');
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 420px;
+
+  /* glass effect */
+  background: rgba(245, 241, 232, 0.75);
+  backdrop-filter: blur(14px);
+
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 6px;
+  font-size: 30px;
+}
+
+.tagline {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 26px;
+}
+
+/* buttons */
+.links a {
+  display: block;
+  margin: 14px 0;
+  padding: 16px;
+
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+
+  background: linear-gradient(135deg, #3e4a3d, #6f8a6f);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  transition: all 0.25s ease;
+}
+
+.links a:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.3);
+}
+
+/* section */
+.section {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Justin Wozniak</h1>
+  <div class="tagline">
+    Learn Spanish through patterns, not memorization
+  </div>
+
+  <div class="links">
+    <a href="https://www.tiktok.com/@justinwozniak" target="_blank">
+      TikTok @justinwozniak
+    </a>
+
+    <a href="https://www.instagram.com/justinwozniak" target="_blank">
+      Instagram @justinwozniak
+    </a>
+
+    <a href="https://www.youtube.com/@wozworld" target="_blank">
+      YouTube @wozworld
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>How I Teach Spanish</h2>
+
+    <p>
+      Most people try to learn Spanish through memorization — rules, charts, and endless vocabulary lists.
+      That approach is slow, frustrating, and doesn’t reflect how language actually works.
+    </p>
+
+    <p>
+      My method is based on pattern recognition — helping you see the structure behind Spanish so everything starts to click naturally.
+    </p>
+
+    <p>
+      Instead of memorizing, you’ll understand. Instead of translating, you’ll think in Spanish.
+    </p>
+
+    <p>
+      This is how you learn faster — and actually retain it.
+    </p>
+  </div>
+
+  <div class="footer">
+    © 2026 Justin Wozniak
+  </div>
+</div>
+
+</body>
+</html>
