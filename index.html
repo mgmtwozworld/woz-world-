@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justin Wozniak</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2f3b2f;
+
+  background:
+    linear-gradient(rgba(30,40,30,0.45), rgba(30,40,30,0.45)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 420px;
+  background: rgba(245, 241, 232, 0.85);
+  backdrop-filter: blur(16px);
+  border-radius: 30px;
+  padding: 32px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hook {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* EMAIL FORM */
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #3e4a3d, #6f8a6f);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* SOCIALS */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 20px 0;
+}
+
+.socials a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials img {
+  width: 24px;
+}
+
+/* TEXT */
+.section {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.trust-note {
+  font-size: 12px;
+  opacity: 0.75;
+  margin-top: 6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Justin Wozniak</h1>
+
+  <div class="hook">
+    Stop memorizing Spanish. Start understanding it.
+  </div>
+
+  <div class="subtext">
+    Get short, actionable lessons that make Spanish actually click.
+  </div>
+
+  <!-- EMAIL FORM -->
+  <form action="https://formspree.io/f/mbdzqqlg" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit">Get Free Lessons & Discounts</button>
+    <div class="trust-note">
+      No spam — only tips, lessons, and exclusive discounts for subscribers.
+    </div>
+  </form>
+
+  <!-- SOCIALS -->
+  <div class="socials">
+    <a href="https://www.tiktok.com/@justinwozniak" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com/justinwozniak" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+    <a href="https://www.youtube.com/@wozworld" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+    </a>
+  </div>
+
+  <div class="section">
+    <p>
+      Most people get stuck trying to memorize Spanish. It’s slow and frustrating.
+    </p>
+    <p>
+      I teach Spanish through patterns instead — once you notice the patterns, everything starts to click naturally.
+    </p>
+    <p>
+      Stop translating in your head. Start understanding. That’s how you really improve.
+    </p>
+  </div>
+
+  <div class="footer">
+    © 2026 Justin Wozniak
+  </div>
+
+</div>
+
+</body>
+</html>
